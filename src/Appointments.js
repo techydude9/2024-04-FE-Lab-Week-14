@@ -1,9 +1,9 @@
-import React, {Component} from 'react'
+
 
 function Appointments({customers}) {
     return (
         <div>
-            <table>
+            <table className="appointmentTable">
                 <thead>
                     <tr>
                         <th>First Name</th>
@@ -14,14 +14,17 @@ function Appointments({customers}) {
                 <tbody>
                     {customers.map((customer, index) => {
                         return (
-                            <tr>test</tr>
-                        )
+                            <tr key={index}>
+                                <td>{customer.firstName}</td>
+                                <td>{customer.lastName}</td>
+                                <td>{customer.appointmentTime}</td>
+                            </tr>
+                        );
                     })}
                 </tbody>
             </table>
         </div>
     )
-
 }
 
 export default Appointments;

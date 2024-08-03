@@ -137,12 +137,22 @@ let allCustomers = [
                     lastName: 'Francis',
                     appointmentTime: '3:00PM',
                   },
+                  {
+                    firstName: 'Ralph',
+                    lastName: 'Kramdon',
+                    appointmentTime: '4:00PM',
+                  },
+                  {
+                    firstName: 'Jim',
+                    lastName: 'Carrey',
+                    appointmentTime: '4:30PM'
+                  }
                 ]
 
 let date = new Date()
 
 let singleUser = {
-  name: 'Jane Smith',
+  name: 'Bob Ruzga',
   todaysDate: date.toDateString(),
 }
 
